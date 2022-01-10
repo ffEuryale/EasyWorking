@@ -1,6 +1,6 @@
 @echo off
 
-:: 이하의 파일이 없을 경우 스크립트 종료
+:: 이하의 파일이 없을 경우 스크립트 실행하지 않고 종료
 IF NOT EXIST %cd%\*.BIN EXIT
 IF NOT EXIST %cd%\*.xls EXIT
 IF NOT EXIST %cd%\ROUTER\POINT EXIT
