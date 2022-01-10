@@ -22,7 +22,6 @@ php.exe xlsc.php
 pushd "%~dp0"
 
 :: C:\php 디렉토리에서 원래 경로로 다시 파일 이동
-move C:\php\*-FILM %cd%\FILM\
 move C:\php\*.BIN %cd%\
 move C:\php\*.xls %cd%\
 move C:\php\*.ROU %cd%\ROUTER\
