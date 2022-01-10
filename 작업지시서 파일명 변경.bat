@@ -10,3 +10,5 @@ pushd "%~dp0"
 
 move C:\php\*.BIN %cd%\
 move C:\php\*.xls %cd%\
+
+del %cd%\*.bat
