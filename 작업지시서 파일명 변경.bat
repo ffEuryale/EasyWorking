@@ -1,7 +1,10 @@
 @echo off
 
-move %cd%\*.BIN C:\php
-move %cd%\*.xls C:\php
+IF NOT EXIST %cd%\*.BIN EXIT
+IF NOT EXIST %cd%\*.xls EXIT
+
+move %cd%\*.BIN C:\php\
+move %cd%\*.xls C:\php\
 
 cd c:\php
 php.exe xlsc.php
