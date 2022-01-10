@@ -17,10 +17,14 @@ php.exe xlsc.php
 
 pushd "%~dp0"
 
+move C:\php\*-FILM %cd%\FILM\
 move C:\php\*.BIN %cd%\
 move C:\php\*.xls %cd%\
 move C:\php\*.ROU %cd%\ROUTER\
 move C:\php\*.DRL %cd%\DRILL\
 move C:\php\*.REP %cd%\DRILL\
+
+copy %cd%\*.xls %cd%\DRILL\
+copy %cd%\*.xls %cd%\ROUTER\
 
 del %cd%\*.bat
